@@ -25,6 +25,7 @@ A travel companion web app that lets users explore destinations, choose a travel
 
 ```text
 AI_TRAVEL_GUIDE NXT/
+├── app.py             # Vercel Flask entrypoint
 ├── Backend/
 │   └── app.py
 ├── Frontend/
@@ -33,6 +34,8 @@ AI_TRAVEL_GUIDE NXT/
 ├── README.md
 └── .gitignore
 ```
+
+Vercel serves the Flask app from the root `app.py` entrypoint. The `Frontend/` files are included in its function bundle through `vercel.json`.
 
 ## Prerequisites
 
